@@ -55,7 +55,11 @@ ORDER BY O.TotalUSD - (O.qty * P.priceUSD * ((100 - C.discount) / 100)) DESC
  
 /* 7. What’s the difference between a LEFT OUTER JOIN and a RIGHT OUTER JOIN? 
  *  Give example queries in SQL to demonstrate. 
- *  (Feel free to use the CAP database to make your points here.) */
+ *  (Feel free to use the CAP database to make your points here.) 
+ * 
+ * A left outer join takes all of the data on the left table and tries to combine it with the right one.
+ *   If it can't it will instead insert <null> for the values on the right table.
+ *   A right outer join s the opposite.  */
 
 
 
